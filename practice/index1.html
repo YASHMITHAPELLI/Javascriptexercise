@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/index2.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <fieldset id="showregister">
+            <legend> REGISTER PRODUCT</legend>
+            <dl>
+                <dt>Product Id</dt>
+                <dd><input type="number" min="1" max="10" id="txtid"></dd>
+                <dt>Product Name</dt>
+                <DD><input type="text" id="txtname"></DD>
+                <dt>Product price</dt>
+                <dd><input type="range" min="1000" max="50000" id="txtprice"></dd>
+                <dt>Product mannufactured</dt>
+                <dd><input type="date" id="txtmfd"></dd>
+                <dt>Is in stocks</dt>
+                <dd>YES<input type="radio" name="stock" value="Available" id="optyes"></dd>
+                <dd>NO<input type="radio" name="stock" value="out of stocks" id="optno "></dd>
+                <dt>Shipped to</dt>
+                <dd><select name="" id="listcity">
+                    <option value="delhi">Delhi</option>
+                    <option value="delhi">PUNE</option>
+                </select></dd>
+            </dl>
+            <br>
+            <input type="button" value="Register" onclick="register()">
+        </fieldset>
+        <fieldset id="showdetails">
+            <legend>Product Details</legend>
+            <table width="400" border="1">
+                <tr>
+                    <td>product Id</td>
+                    <td id="aa"></td>
+                </tr>
+                <tr>
+                    <td>product Name</td>
+                    <td id="bb"> </td>
+                </tr>
+                <tr>
+                    <td>product Price</td>
+                    <td id="cc"> </td>
+                </tr>
+                <tr>
+                    <td>Manufacturing date</td>
+                    <td id="dd"> </td>
+                </tr>
+                <tr>
+                    <td>Is in stocks</td>
+                    <td id="ee"> </td>
+                </tr>
+                <tr>
+                    <td>Shipped to</td>
+                    <td id="ff"> </td>
+                </tr>
+                <br><br>
+
+            </table>
+
+        </fieldset>
+
+        </form>
+    </div>
+    
+</body>
+</html>

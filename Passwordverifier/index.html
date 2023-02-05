@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASS-CHECK</title>
+    <link rel="stylesheet" href="/Passwordverifier/index.css">
+    <script src="/Passwordverifier/index.js"></script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>PASSWORD</legend>
+            <input type="password" id="txtpass" onkeyup="verifypass()">
+            <meter min="1" max="100" value="0" low="0" high="0" id="grade"></meter>
+            <span id="msg"></span>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
